@@ -1,0 +1,190 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	box-sizing: border-box;
+}
+
+body {
+	background: #eee;
+}
+
+
+.header {
+	text-align: center;
+	font-weight: 300;
+	font-size: 30px;
+	color: #999;
+	margin: 50px;
+}
+
+
+.watch-container {
+	width: 300px;
+	margin: 50px auto;
+}
+
+
+.watch {
+	position: relative;
+	width: 300px;
+	height: 300px;
+}
+
+
+.watch-face {
+	width: 300px;
+	height: 300px;
+	border-radius: 100%;
+	background: #3F484A; 
+	border: 10px solid silver; 
+	box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+	
+	
+
+
+.watch-face-outline-point {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background: #777;
+	left: 145px;
+	top: 24px;
+	border-radius: 100%;
+	transform-origin: 50% 126px;
+}
+
+.point-12 { transform: rotate(0deg); }
+.point-1 {  transform: rotate(30deg); }
+.point-2 {  transform: rotate(60deg); }
+.point-3 {  transform: rotate(90deg); }
+.point-4 { transform: rotate(120deg); }
+.point-5 { transform: rotate(150deg); }
+.point-6 { transform: rotate(180deg); }
+.point-7 { transform: rotate(210deg); }
+.point-8 { transform: rotate(240deg); }
+.point-9 { transform: rotate(270deg); }
+.point-10 { transform: rotate(300deg); }
+.point-11 { transform: rotate(330deg); }
+
+	
+.watch-face-date {
+	position: absolute;
+	background-color: rgba(0,0,0,0.1);
+	width: 60px;
+	height: 27px;
+	border-radius: 5px;
+	text-align: center;
+	top: 138px;
+	right: 50px;
+	font-size: 15px;
+	line-height: 27px;
+	color: #aaa;
+	font-weight: 300;
+}
+
+	
+.watch-face-centre {
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	top: 144px;
+	left: 144px;
+	border-radius: 100%;
+	background: #fff;
+}
+
+.watch-face-centre-inner {
+	position: absolute;
+	z-index: 1;
+	width: 8px;
+	height: 8px;
+	top: 2px;
+	left: 2px;
+	border-radius: 100%;
+	background: #333;
+	border: 2px solid #fa9f22;
+}
+
+	
+	
+.watch-face-hand {
+	position: absolute;
+}
+
+.watch-face-hand.hour {
+	width: 4px;
+	height: 60px;
+	top: 90px;
+	left: 148px;
+	border-radius: 10px;
+	background: #fff;
+	transform-origin: 50% 100%;
+	transform: rotate(306deg);
+}
+
+.watch-face-hand.minute {
+	width: 4px;
+	height: 120px;
+	top: 30px;
+	left: 148px;
+	border-radius: 10px;
+	background: #fff;
+	transform-origin: 50% 100%;
+	transform: rotate(50deg);
+}
+
+.watch-face-hand.second {
+	width: 2px;
+	height: 145px;
+	top: 20px;
+	left: 149px;
+	border-radius: 10px;
+	background: #fa9f22;
+	transform-origin: 50% 130px;
+	transform: rotate(180deg);
+}
+
+
+.watch-crown {
+position: relative;
+z-index: -1;
+width: 15px;
+height: 26px;
+top: -163px;
+left: 295px;
+border-radius: 5px;
+background: #999;
+border-right: 2px solid rgba(0, 0, 0, 0.05);
+box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+.watch-strap-top {
+position: relative;
+z-index: -1;
+width: 120px;
+height: 150px;
+left: 90px;
+bottom: -20px;
+background: url('./../img/texturas_piel9.jpg');
+border-radius: 10px 10px 0 0;
+}
+
+.watch-strap-bottom {
+position: relative;
+z-index: -1;
+width: 120px;
+height: 150px;
+left: 90px;
+bottom: 20px;
+background: url('./../img/texturas_piel9.jpg');
+border-radius: 0 0 10px 10px;
+color: rgba(0, 0, 0, 0.2);
+font-weight: bold;
+text-align: center;
+padding-top: 120px;
+text-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
